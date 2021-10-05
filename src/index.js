@@ -13,11 +13,14 @@ import ReactDOM from 'react-dom';
 /* import { SimpleForm } from './components/02-useEffect/SimpleForm'; */
 /* import { HooksApp } from './HooksApp'; */
 
-import { Padre } from './components/07-tarea-memo/Padre';
+/* import { Padre } from './components/07-tarea-memo/Padre'; */
+import { TodoApp } from './components/08-useReducer/TodoApp';
 
 ReactDOM.render(
 
-    <Padre />,
+    <TodoApp />,
 
   document.getElementById('root')
 );
+
+/* import './components/08-useReducer/intro-reducer' */
