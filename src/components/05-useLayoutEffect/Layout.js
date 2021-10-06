@@ -6,7 +6,7 @@ import './layout.css';
 export const Layout = () => {
 
     const {counter, increment} = useCounter(1);
-    const {loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
+    const { data } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
     const { quote } = !!data && data[0];
 
     const pTag = useRef()
