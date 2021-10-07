@@ -14,7 +14,10 @@ export const LoginScreen = () => {
             <h1>Login Screen</h1>
             <hr />
 
-            <button className="btn btn-primary" onClick={()=> setUser(user)}>Login</button>
+            <button 
+                className="btn btn-primary" 
+                onClick={()=> setUser(user)}>Login
+            </button>
         </div>
     )
 }

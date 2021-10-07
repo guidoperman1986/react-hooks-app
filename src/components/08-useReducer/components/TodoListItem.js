@@ -5,13 +5,14 @@ export const TodoListItem = ({todo, i, handleDelete, handleToggle}) => {
         <li className="list-group-item text-center" 
             key={todo.id}
             onClick={ () => handleToggle(todo.id) }
-            > {i + 1}. { todo.desc }
+            > 
             <p className={ `${todo.done && 'complete'}` }>
-                    <button 
-                        className="btn btn-danger" 
-                        onClick={ ()=>handleDelete(todo.id) }
-                    >Borrar</button>
+                {i + 1}. { todo.desc }
             </p>
+            <button 
+                className="btn btn-danger" 
+                onClick={ ()=>handleDelete(todo.id) }
+            >Borrar</button>
         </li>
     )
 }
